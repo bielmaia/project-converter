@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <link rel="stylesheet" type="text/css" href="CSS/bootstrap.min.css">
+        <link rel="stylesheet" type="text/css" href="CSS/style.css">
+        <script text="text/javascript">
+            var f, c, k;
+            function convert(degree) {
+                "use strict";
+                if (degree === "C") {
+                    c = document.getElementById("c").value;
+                    f = +c * 9 / 5 + 32;
+                    document.getElementById("f").value = f;
+                    k = +c + 273.15;
+                    document.getElementById("k").value = parseFloat(k).toFixed(2);
+                } else if (degree === "F") {
+                    f = document.getElementById("f").value;
+                    c = (f - 32) * 5 / 9;
+                    k = (f - 459.67) * 5 / 9;
+                    document.getElementById("c").value = parseFloat(c).toFixed(2);
+                    document.getElementById("k").value = parseFloat(k).toFixed(2);
+                } else {
+                    k = document.getElementById("k").value;
+                    c = k - 273.15;
+                    f = (k * 9 / 5) - 459.67;
+                    document.getElementById("c").value = c;
+                    document.getElementById("f").value = parseFloat(f).toFixed(2);
+                }
+            }
+        </script>
+    </head>
+    <body>
+        <h2>Temperatura</h2>
+        <p>Insira um número no campo desejado abaixo:</p>
+        <p><input id="c" type="number" onkeyup="convert('C')">°C (Celsius)</p>
+        <p><input id="f" type="number" onkeyup="convert('F')">°F (Fahrenheit)</p>
+        <p><input id="k" type="number" onkeyup="convert('K')">K (Kelvin)</p>
+        <button type="button"><a href="index.html">Início</a></button>
+        <footer style="container">Conversor criado por Gabriel Maia - 2017</footer>
+    </body>
+</html>
