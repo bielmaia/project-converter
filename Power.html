@@ -1,45 +1,39 @@
-<!DOCTYPE html>
-<html>
-    <head>
-        <meta charset="utf-8">
-        <link rel="stylesheet" type="text/css" href="CSS/bootstrap.min.css">
-        <link rel="stylesheet" type="text/css" href="CSS/style.css">
-        <script src="JS/power.js"></script>
-    </head>
-    <body>
-        <h2>Potência</h2>
-        <p>Insira um número no campo desejado abaixo:</p>
-        <p><input id="a" type="number" onkeyup="convert('W')">W</p>
-        <p><input id="b" type="number" onkeyup="convert('B')">BTU<sub>IT</sub>/h</p>
-        <p><input id="c" type="number" onkeyup="convert('C')">cal<sub>IT</sub>/s</p>
-        <p><input id="d" type="number" onkeyup="convert('E')">erg/s</p>
-        <p><input id="e" type="number" onkeyup="convert('HPB')">hp (boiler)</p>
-        <p><input id="f" type="number" onkeyup="convert('HPEE')">hp (europeu elétrico)</p>
-        <p><input id="g" type="number" onkeyup="convert('HPE')">hp (elétrico)</p>
-        <p><input id="h" type="number" onkeyup="convert('HPM')">hp (mecânico)</p>
-        <p><input id="i" type="number" onkeyup="convert('HPMT')">hp (métrico)</p>
-        <p><input id="j" type="number" onkeyup="convert('TR')">TR</p>
-        <p><input id="k" type="number" onkeyup="convert('TRI')">TR (Imperial)</p>
-        <p><input id="l" type="number" onkeyup="convert('TRS')">TR (IT)</p>
-        <button type="button"><a href="index.html">Início</a></button>
-        <p>Obs.: está travado em 4 casas decimais.</p>
-        <nav>
-            <p>Descrições:</p>
-            <ul>
-                <li>W - Watt;</li>
-                <li>BTU<sub>IT</sub>/h;</li>
-                <li>cal/s - Caloria por segundo;</li>
-                <li>erg/s - Erg por segundo (unidade de medida do sistema <b>cgs</b>;</li>
-                <li>hp (boiler) - capacidade de uma caldeira de entregar vapor;</li>
-                <li>hp (europeu elétrico) - 75 kp.m/s (736 W);</li>
-                <li>hp (elétrico) - 746 W;</li>
-                <li>hp (mecânico ou imperial) - 550 ft.lbf/s;</li>
-                <li>hp (métrico) - 75 m.kgf/s;</li>
-                <li>TR - Tonelada de Refrigeração (por volta de 12000 BTU<sub>IT</sub>/h) ou 2000 libras de gelo derretido em 24h;</li>
-                <li>TR (Imperial) - TR na unidade imperial;</li>
-                <li>TR <sub>IT</sub> - TR pela "international steam table";</li>
-            </ul>
-        </nav>
-        <footer style="container">Conversor criado por Gabriel Maia - 2017</footer>
-    </body>
-</html>
+---
+title: Potência
+layout: default
+custom_js:
+- JS/power
+---
+<h2>Potência</h2>
+<p>Insira um número no campo desejado abaixo:</p>
+<p><input id="a" type="number" onkeyup="convert('W')">W</p>
+<p><input id="b" type="number" onkeyup="convert('B')">BTU<sub>IT</sub>/h</p>
+<p><input id="c" type="number" onkeyup="convert('C')">cal<sub>IT</sub>/s</p>
+<p><input id="d" type="number" onkeyup="convert('E')">erg/s</p>
+<p><input id="e" type="number" onkeyup="convert('HPB')">hp (boiler)</p>
+<p><input id="f" type="number" onkeyup="convert('HPEE')">hp (europeu elétrico)</p>
+<p><input id="g" type="number" onkeyup="convert('HPE')">hp (elétrico)</p>
+<p><input id="h" type="number" onkeyup="convert('HPM')">hp (mecânico)</p>
+<p><input id="i" type="number" onkeyup="convert('HPMT')">hp (métrico)</p>
+<p><input id="j" type="number" onkeyup="convert('TR')">TR</p>
+<p><input id="k" type="number" onkeyup="convert('TRI')">TR (Imperial)</p>
+<p><input id="l" type="number" onkeyup="convert('TRS')">TR (IT)</p>
+<button type="button"><a href="{{ site.baseurl }}/index.html">Início</a></button>
+<p>Obs.: está travado em 4 casas decimais.</p>
+<nav>
+    <p>Descrições:</p>
+    <ul>
+        <li>W - Watt;</li>
+        <li>BTU<sub>IT</sub>/h;</li>
+        <li>cal/s - Caloria por segundo;</li>
+        <li>erg/s - Erg por segundo (unidade de medida do sistema <b>cgs</b>;</li>
+        <li>hp (boiler) - capacidade de uma caldeira de entregar vapor;</li>
+        <li>hp (europeu elétrico) - 75 kp.m/s (736 W);</li>
+        <li>hp (elétrico) - 746 W;</li>
+        <li>hp (mecânico ou imperial) - 550 ft.lbf/s;</li>
+        <li>hp (métrico) - 75 m.kgf/s;</li>
+        <li>TR - Tonelada de Refrigeração (por volta de 12000 BTU<sub>IT</sub>/h) ou 2000 libras de gelo derretido em 24h;</li>
+        <li>TR (Imperial) - TR na unidade imperial;</li>
+        <li>TR <sub>IT</sub> - TR pela "international steam table";</li>
+    </ul>
+</nav>

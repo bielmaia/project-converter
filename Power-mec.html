@@ -1,27 +1,22 @@
+---
+title: Potência (mecânica)
+layout: default
+custom_js:
+- JS/powermec
+---
 <!DOCTYPE html>
-<html>
-    <head>
-        <meta charset="utf-8">
-        <link rel="stylesheet" type="text/css" href="CSS/bootstrap.min.css">
-        <link rel="stylesheet" type="text/css" href="CSS/style.css">
-        <script src="JS/powermec.js"></script>
-    </head>
-    <body>
-        <h2>Potência (mecânica)</h2>
-        <p>Insira um número no campo desejado abaixo:</p>
-        <p><input id="a" type="number" onkeyup="convert('W')">W</p>
-        <p><input id="b" type="number" onkeyup="convert('HP')">HP</p>
-        <p><input id="c" type="number" onkeyup="convert('CV')">CV</p>
-        <button type="button"><a href="index.html">Início</a></button>
-        <p>Obs.: está travado em 4 casas decimais.</p>
-        <nav>
-            <p>Descrições:</p>
-            <ul>
-                <li>W - Watt;</li>
-                <li>HP - Horse power;</li>
-                <li>CV - Cavalo vapor;</li>
-            </ul>
-        </nav>
-        <footer style="container">Conversor criado por Gabriel Maia - 2017</footer>
-    </body>
-</html>
+<h2>Potência (mecânica)</h2>
+<p>Insira um número no campo desejado abaixo:</p>
+<p><input id="a" type="number" onkeyup="convert('W')">W</p>
+<p><input id="b" type="number" onkeyup="convert('HP')">HP</p>
+<p><input id="c" type="number" onkeyup="convert('CV')">CV</p>
+<button type="button"><a href="{{ site.baseurl }}/index.html">Início</a></button>
+<p>Obs.: está travado em 4 casas decimais.</p>
+<nav>
+    <p>Descrições:</p>
+    <ul>
+        <li>W - Watt;</li>
+        <li>HP - Horse power;</li>
+        <li>CV - Cavalo vapor;</li>
+    </ul>
+</nav>
