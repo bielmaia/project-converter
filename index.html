@@ -1,31 +1,23 @@
-<!DOCTYPE html>
-<html>
-    <head>
-        <meta charset="utf-8">
-        <link rel="stylesheet" type="text/css" href="CSS/bootstrap.min.css">
-        <link rel="stylesheet" type="text/css" href="CSS/style.css">
-    </head>
-    <body>
-        <h1>Conversor versão 0.2</h1>
-        <p>
-            Escolha abaixo o que você quer converter:
-        </p>
-        <br>
-        <div class="container">
-            <a href="Power.html">
-                <button type="button" class="col-md-2"><span>Potência (refrigeração)</span><br><span>(W, BTU, TR...)</span></button>
-            </a>
-            <a href="Power-mec.html">
-                <button type="button" class="col-md-2"><span>Potência (mecânica)</span><br><span>(CV, HP, W)</span></button>
-            </a>
-            <a href="Pressure.html">
-                <button type="button" class="col-md-2"><span>Pressão</span><br>(psi, bar, mmHg...)</button>
-            </a>
-            <a href="Temperature.html">
-                <button type="button" class="col-md-2"><span>Temperatura</span><br>(°C, °F, K)</button>
-            </a>
-        </div>
-        <hr>
-        <footer style="container">Conversor criado por Gabriel Maia - 2017</footer>
-    </body>
-</html>
+---
+layout: home
+title: Início
+---
+<h1>{{ site.title }}</h1>
+    <p>Escolha abaixo o que você quer converter:
+    </p>
+    <br>
+    <div class="container">
+        <a href="{{ site.url }}/{{ site.baseurl }}/Power.html">
+            <button type="button" class="col-md-2"><span>Potência (refrigeração)</span><br><span>(W, BTU, TR...)</span></button>
+        </a>
+        <a href="{{ site.url }}/{{ site.baseurl }}/Power-mec.html">
+            <button type="button" class="col-md-2"><span>Potência (mecânica)</span><br><span>(CV, HP, W)</span></button>
+        </a>
+        <a href="{{ site.url }}/{{ site.baseurl }}/Pressure.html">
+            <button type="button" class="col-md-2"><span>Pressão</span><br>(psi, bar, mmHg...)</button>
+        </a>
+        <a href="{{ site.url }}/{{ site.baseurl }}/Temperature.html">
+            <button type="button" class="col-md-2"><span>Temperatura</span><br>(°C, °F, K)</button>
+        </a>
+    </div>
+<hr>
